@@ -24,9 +24,9 @@ namespace Secuencia_Fibonacci
             if (int.TryParse(textBox1.Text, out int limite) && limite >= 0)
             {
                 int a = 0;
-                int b = 1;
                 int temp = 0;
                 int i = 0;
+                int b = 1;
 
                 while (a <= limite)
                 {
@@ -36,7 +36,7 @@ namespace Secuencia_Fibonacci
                     b = temp + a;
                     i++;
                 }
-                if (limite == a)
+                if (limite == temp)
                 {
                     MessageBox.Show("Se hicieron un total de " + i + " iteraciones y el número si existe en la secuencia");
                 }
