@@ -38,16 +38,16 @@ namespace Secuencia_Fibonacci
                 }
                 if (limite == temp)
                 {
-                    MessageBox.Show("Se hicieron un total de " + i + " iteraciones y el número si existe en la secuencia");
+                    MessageBox.Show("Se hicieron un total de " + i + " iteraciones y el número si existe en la secuencia", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Se hicieron un total de " + i + " iteraciones y el número no existe en la secuencia, el número más cercano es " + temp);
+                    MessageBox.Show("Se hicieron un total de " + i + " iteraciones y el número no existe en la secuencia, el número más cercano es " + temp, "", MessageBoxButtons.OK, MessageBoxIcon.Hand);
                 }
             }
             else
             {
-                MessageBox.Show("ingresa un numero entero");
+                MessageBox.Show("ingresa un numero entero", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
         }
     }
